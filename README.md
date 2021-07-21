@@ -5,10 +5,7 @@ __https://www.youtube.com/watch?v=9OJLxDxyNg4&list=PLEiMYEzpB4QuS8AXU9eAz1aw_WBk
 
 ## Chapitre 1 : Les bases :   
 
-• Qu'est-ce que JavaScript ?    
-• Les outils pour coder le JS     
-• Où s'écrit le JavaScript ?     
-• Les commentaires    
+• Qu'est-ce que JavaScript ?       
 • La syntaxe    
 • Les variables    
 • La concaténation    
@@ -18,4 +15,9 @@ __https://www.youtube.com/watch?v=9OJLxDxyNg4&list=PLEiMYEzpB4QuS8AXU9eAz1aw_WBk
 • Les fonctions    
 • La portée des variables      
 • Mise en application à l'aide d'un projet    
+
+
+### Qu'est-ce que JavaScript ?   
+
+• " JavaScript est un langage de script multiplateformes et orienté objets. C'est un langage léger qui doit faire partie d'un environement 'Orienté Objet' (browsers) pour qu'il puisse être utilisé sur les objets de cet environnement. " (MDN)
 
