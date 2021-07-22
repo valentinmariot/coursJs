@@ -13,7 +13,7 @@ __https://www.youtube.com/watch?v=9OJLxDxyNg4&list=PLEiMYEzpB4QuS8AXU9eAz1aw_WBk
 • Les opérateurs / opérateurs d'affectation /etc  
 • Les fonctions    
 • La portée des variables      
-• Mise en application à l'aide d'un projet    
+• Mise en application à l'aide d'un projet 'Calculatrice'   
 
 
 ### Qu'est-ce que JavaScript ?   
@@ -115,8 +115,12 @@ function calc(x, y){
 })();
 ```    
 
+••• TIPS •••    
+• 'return' met fin à une fonction.    
+
 ### La portée des variables :    
-• 
+• Une variable définie au sein d'une fonction ne sera connue qu'au sein de sa scope soit à l'intérieur de cette fonction.    
+• Une variable définie à l'extérieur d'une fonction peut être appelée au sein de celle-ci, via ses paramètres.     
 
-
-
+### Projet 'Calculatrice' : 
+• Ce projet est disponible dans le répertoire '1_Calculatrice'. 
