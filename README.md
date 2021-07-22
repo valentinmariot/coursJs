@@ -10,8 +10,7 @@ __https://www.youtube.com/watch?v=9OJLxDxyNg4&list=PLEiMYEzpB4QuS8AXU9eAz1aw_WBk
 • Les variables    
 • La concaténation    
 • Les types de données    
-• Les opérateurs / opérateurs d'affectation    
-• Les structures de contrôle     
+• Les opérateurs / opérateurs d'affectation /etc  
 • Les fonctions    
 • La portée des variables      
 • Mise en application à l'aide d'un projet    
@@ -44,11 +43,80 @@ __https://www.youtube.com/watch?v=9OJLxDxyNg4&list=PLEiMYEzpB4QuS8AXU9eAz1aw_WBk
 • Boolean (binaire) : la réponse sera 'vraie' ou 'faux', '0' ou '1', 'oui' ou 'non', etc,     
 • Array (tableau) : son contenu sera défini entre [brackets] et peut contenir plusieurs informations de différents types (string, number, boolean),    
 • Object (objet) : son contenu sera défini entre {braces} et peut contenir plusieurs informations organisé à l'aide d'indexes et de valeurs, de différents types (string, number, boolean).     
-• NULLL
+• NULL : variable dont la valeur/le type ne vaut rien,      
+• Undefined : pas définit. 
 
 
 ••• TIPS •••    
 • Pour connaitre le type d'une donnée, on peut utiliser la fonction ```console.log(typeof ...);```     
-• Un array sera considéré comme un tableau.
+• Un array et une variable null seront considérés comme des objets.     
+
+### Les opérateurs / opérateurs d'affectation :    
+
+#### Opérateurs : 
+• + = addition,    
+• - = soustraction,      
+• * = multiplication,     
+• / = division,     
+• ** = puissance.    
+
+#### Opérateurs d'affectation :    
+• ++ = incrémenter une valeur (i++),   
+• -- = décrémenter une valeur (i--),   
+• += = méthode différente pour ajouter une valeur (aussi disponible : -=, *=, /=).  
+
+••• TIPS •••    
+• Si on considère let total = 2 et let x = 4. Dans le cas où on voudrait passer x à total afin que la valeur de se dernier soit 5, on ferait ```total = ++x```  
+Attention au placemment du l'opérateur avant sinon l'incrémentation ne sera pas prise en compte.     
+
+#### Opérateurs ternaires :   
+• if-else =  x == y ? 'bonjour' : 'au revoir';    
+
+### Les fonctions :     
+• Une fonction est un algorythme qui a un nom. Ex :   
+```
+// Declare function
+function maFonctionCoucou() {
+    console.log('Hello');
+}
+
+// Call function
+maFonctionCoucou();
+```    
+• Une fonction flêchée est identique à une fonction traditionnnelle mais sera placée dans une constante. Ex :      
+```
+// Declare function
+const faireCoucou = (cible) => {
+    console.log('Hello' + cible);
+};
+
+// Use with parameters
+faireCoucou('you');
+faireCoucou('Toto');
+```     
+• Cas 'return' :    
+```
+// Declare function and return
+function calc(x, y){
+   return x + y;
+}
+```   
+• Fonction qui se joue toute seule :     
+```
+// Declare function
+(function maFonction(){
+    console.log('Je me joue seule');
+})();
+```   
+• Cas de la fonction anonyme :    
+```
+(() => {
+    console.log('Je me joue aussi seule et suis anonyme)
+})();
+```    
+
+### La portée des variables :    
+• 
+
 
 
