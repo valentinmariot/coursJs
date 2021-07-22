@@ -1,7 +1,7 @@
 # Cours JavaScript réalisés par FromScrath 
 
 Afin de renforcer mon niveau en JavaScript, je forge mes compétences à l'aide d'une série de vidéos YouTube disponible à cette adresse : 
-__shorturl.at/xzC29__
+__http://shorturl.at/xzC29__
 
 ## Chapitre 1 : Les bases :   
 
@@ -123,4 +123,4 @@ function calc(x, y){
 • Une variable définie à l'extérieur d'une fonction peut être appelée au sein de celle-ci, via ses paramètres.     
 
 ### Projet 'Calculatrice' : 
-• Ce projet est disponible dans le répertoire '1_Calculatrice'. 
+• Ce projet est disponible dans le répertoire '1_calculatrice'. 
