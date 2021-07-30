@@ -3,7 +3,7 @@
 Afin de renforcer mon niveau en JavaScript, je forge mes compétences à l'aide d'une série de vidéos YouTube disponible à cette adresse : 
 __http://shorturl.at/xzC29__
 
-## Chapitre 1 : Les bases :   
+## Chapitre 1 : Les bases    
 
 • Qu'est-ce que JavaScript ?       
 • La syntaxe    
@@ -123,4 +123,24 @@ function calc(x, y){
 • Une variable définie à l'extérieur d'une fonction peut être appelée au sein de celle-ci, via ses paramètres.     
 
 ### Projet 'Calculatrice' : 
-• Ce projet est disponible dans le répertoire '1_calculatrice'. 
+• Ce projet est disponible dans le répertoire '1_calculatrice'.    
+    
+        
+
+## Chapitre 2 : Le DOM   
+• Qu'est-ce que le DOM ?    
+• Les sélecteurs   
+• AddEventListener   
+• Les types d'évènements   
+• Méthodes autour des events   
+• Foreach   
+• Manipulation du DOM par l'exemple   
+• Set Property   
+• Le BOM    
+• Mise en application à l'aide d'un projet 'Générateur de bulles'    
+
+### Qu'est-ce que le DOM ?   
+• " Le Document Object Model (DOM) est une interface de programmation qui permet à des scripts d'examiner et de modifier le contenu du navigateur web. Par le DOM, la composition d'un document HTML est représentée sous forme d'un jeu d'objets - lesquels peuvent représenter une fenêtre, une phrase ou un style, par exemple - reliés selon une structure en arbre. " (MDN)    
+
+### Les sélecteurs :    
+• Pour cibler un élément sur le DOM, on peut utiliser 'querySelector' et 'getElementById'.
