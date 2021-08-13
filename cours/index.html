@@ -8,6 +8,20 @@
     <title>Cours</title>
 </head>
 <body>
+
+    <nav>
+        <ul>
+            <li>Accueil</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    
+    <div class="mousemove"></div>
+    
+    <div class="keypress box">
+        <h2>Vous appuyez sur la touche : <span id="key"></span> </h2>
+    </div>
     
     <div class="click-event box">
         <h4>Quelle est la capitale de la Suisse ?</h4>
@@ -16,6 +30,19 @@
         <p>La bonne réponse est Berne !</p>
     </div>
 
+    <form class="box">
+        <input type="text" placeholder="Entrez votre nom">
+        <select>
+            <option value="">Sélectionner votre langage favoris</option>
+            <option value="Javascript">Javascript</option>
+            <option value="PHP">PHP</option>
+            <option value="Python">Python</option>
+        </select>
+        <input type="checkbox" id="cgv">
+        <label for="sgv">Accepter les CGV</label>
+        <input type="submit" value="Valider">
+        <div></div>
+    </form>
 
     <script src="./index.js"></script>
 </body>
