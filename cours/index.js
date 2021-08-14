@@ -123,3 +123,97 @@ boxes.forEach((box) => {
         e.target.style.transform = "scale(0.7)";
     })
 });
+
+//___________________________________________________
+// addEventListener VS onclick
+
+// document.body.onclick = () => {
+//     console.log('Click !');
+// };
+
+
+// Bubbling => fin (initialement, l'eventlintener est paramétré en mode Bubbling). Le troisième argument est par défaut sur 'false'
+document.body.addEventListener('click', () =>  {
+    console.log('click 1');
+}, false);
+
+// Usecapture 
+document.body.addEventListener('click', () =>  {
+    console.log('click 2');
+}, true);
+
+//____________________________________________________
+// stopPropagation
+
+askContainer.addEventListener('click', () => {
+    alert('test');
+    e.stopPropagation();
+})
+// Voir aussi -> removeEventListener
+
+//____________________________________________________
+// BOM
+
+// window.open('http://google.com', 'cours js', 'height=600, width=800')
+// window.close()
+
+// Évènements adossés à Window
+//alert('hello');
+
+// // confirm
+// btn2.addEventListener('click', () => {
+//     confirm('Voulez vous vraiment vous tromper ?')
+// })
+
+// // prompt
+// let answer = '';
+// btn1.addEventListener('click', () => {
+//    let answer = prompt('Entrez votre nom !')
+
+//    askContainer.innerHTML += "<h3>Bravo " + answer + "</h3>";
+// })
+
+// // Timer like :
+// setTimeout(() => {
+//     askContainer.style.borderRadius = "300px";
+// }, 2000);
+
+// let interval =setInterval(() => {
+//     document.body.innerHTML += `
+//         <div class="box">
+//             <h2>New box every sec</h2>
+//         </div>
+//     `;
+// }, 100000);
+
+// document.body.addEventListener('click', (e) => {
+//     e.target.remove();
+//     clearInterval(interval);
+// })
+
+// Location
+console.log(location.href);
+console.log(location.host);
+console.log(location.pathname);
+console.log(location.search);
+// location.replace('http://google.com')
+
+// window.onload = () => {
+//     location.href = 'http://google.com'
+// }
+
+// Navigator
+console.log(navigator.userAgent);
+
+// History
+// console.log(history);
+// window.history.back();
+// history.go(-2);
+
+//________________________________________________
+// setProperty
+window.addEventListener('mousemove', (e) => {
+    nav.style.setProperty('--x', e.layerX + "px")
+    nav.style.setProperty('--y', e.layerY + "px")
+}) 
+

@@ -144,3 +144,6 @@ function calc(x, y){
 
 ### Les sélecteurs :    
 • Pour cibler un élément sur le DOM, on peut utiliser 'querySelector' et 'getElementById'.
+
+### Le BOM :
+• Le Browser Object Model (BOM) contient l'objet Window.
