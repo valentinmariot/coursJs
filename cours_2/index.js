@@ -61,20 +61,20 @@ let data = [
 // valeur à tester ? si vrai : si faux
 
 // While
-let w = 0;
+// let w = 0;
 
-while (w < 10) {
-    w++;
-    console.log('La valeur de w est de : ' + w);
-}
+// while (w < 10) {
+//     w++;
+//     console.log('La valeur de w est de : ' + w);
+// }
 
 // Do while
-let d = 0;
+// let d = 0;
 
-do {
-    d++;
-    console.log(d);
-} while (d < 5);
+// do {
+//     d++;
+//     console.log(d);
+// } while (d < 5);
 
 // Les boucles for
 // for (const user of data) {
@@ -82,28 +82,28 @@ do {
 // }
 
 // On déclare la valeur de 'i' | jusqu'où on boucle | évolution de 'i' si la condition 2 n'est pas remplie
-for (i = 0 ; i < data.length; i++) {
-    // console.log(data[i].technos[0]);
-    document.body.innerHTML += '<h2>' + data[i].technos.join(' / ') + '</h2>';
-}
+// for (i = 0 ; i < data.length; i++) {
+//     // console.log(data[i].technos[0]);
+//     document.body.innerHTML += '<h2>' + data[i].technos.join(' / ') + '</h2>';
+// }
 
 // Switch
-document.body.addEventListener('click', (e) => {
-    switch (e.target.id) {
-        case 'javascript':
-            document.body.style.background = 'yellow';
-            break;
-        case 'php' :
-            document.body.style.background = 'purple';
-            break;
-        case 'python' :
-            document.body.style.background = 'blue';
-            break;
-        default:
-            null;
-            break;
-    }
-});
+// document.body.addEventListener('click', (e) => {
+//     switch (e.target.id) {
+//         case 'javascript':
+//             document.body.style.background = 'yellow';
+//             break;
+//         case 'php' :
+//             document.body.style.background = 'purple';
+//             break;
+//         case 'python' :
+//             document.body.style.background = 'blue';
+//             break;
+//         default:
+//             null;
+//             break;
+//     }
+// });
 
 //____________________________________________________________
 // Méthodes String :
@@ -147,6 +147,90 @@ console.log(parseInt(numberString));
 // parseFloat() comme parseInt() mais conserve les chiffres après la virgule
 console.log(parseFloat(numberString));
 
+// Math
+// console.log(Math.PI);
+// console.log(Math.round(4.9));
+// console.log(Math.flour(4.9));
+// console.log(Math.ceil(4.9));
+// console.log(Math.pow(2, 7));
+// console.log(Math.sqrt(16));
+
+// console.log(Math.floor(Math.random() * 50));
+
+//____________________________________________________________
+// Méthodes Arrays :
+let array3 = ['JavaScript', 'React', 'Angular', 'TypeScript'];
+let array4 = ['Node', 'Python', 'PHP'];
+
+// ... spread operator
+let newArray = [...array3, ...array4];
+// console.log(newArray);
+
+// console.log(array3.join(' '));
+// console.log(array3.slice(1, 3));
+// console.log(array4.indexOf('Python')); 
+// array3.forEach((languages) => console.log(languages)); 
+
+// Pour s'assurer que tous les résultats sont idendiques, on utilise every()
+// console.log(array3.every((language) => language == 'React'));
+// Pour vérifier que le résultat existe bien, on utilise some() 
+// console.log(array3.some((language) => language == 'React'));
+
+// Pour casser un tableau en retirant le premier élément, on utilise shift :
+// let shift = array3.shift();
+// console.log(array3);
+// Pour retirer le dernier élément, on utilise pop() :
+// array3.pop();
+// console.log(array3);
+
+// Pour remplacer une valeur, on utilise splice() :
+const restArray = array3.splice(0, 1, "Vue");
+// console.log(array3);
+
+// IMPORTANT // 
+let arrayNumber = [4, 74, 28, 13, 3];
+
+// Pour additionner des résultats/des tableaux, on utilise reduce() :
+console.log(arrayNumber.reduce((x, y) => x + y));
+
+// Pour ajouter des données, on utilise push() :
+arrayNumber.push(666);
+console.log(arrayNumber);
+
+// FILTER, SORT, MAP
+
+// Filter() permet de 'filtrer' des données d'un tableau.
+// Sort() permet de trier des objets et des tableaux.
+// Map() permet de lister/mapper (un peu comme un forEach en plus puissant)
+
+// EXEMPLE : pour garder les chiffres suppérieurs à 10 :
+console.log(arrayNumber.filter((number) => number > 10));
+
+// EXEMPLE : pour classer par ordre croissant : 
+console.log(arrayNumber.sort((a, b) => a - b));
+// EXEMPLE : pour classer par ordre décroissant : 
+console.log(arrayNumber.sort((a, b) => b - a));
+
+// document.body.innerHTML = arrayNumber
+//     .map((number) => `<li>${number}</li>`)
+//     .join('');
 
 
-//
+//____________________________________________________________
+// Méthodes Objects :
+
+// EXEMPLE : pour classer des utilisateurs par âge :
+document.body.innerHTML = data
+    .filter((user) => user.admin === false)
+    .filter((user) => user.pseudo.includes('i'))
+    .sort((a, b) => a.age - b.age)
+    .map((user) => 
+        `
+            <div class="user-card">
+                <h2>${user.pseudo}</h2>
+                <p>Age : ${user.age} ans</p>
+                <p>Status : ${user.admin ? 'Administrateur' : 'Membre'}</p>
+            </div>
+        `
+    )
+    .join('');

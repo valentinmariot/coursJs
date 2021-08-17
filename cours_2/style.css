@@ -1,0 +1,8 @@
+* {
+    text-align: center;
+} 
+
+.user-card {
+    border: 2px solid grey;
+    margin: 10px;
+}
