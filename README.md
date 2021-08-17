@@ -143,7 +143,39 @@ function calc(x, y){
 • " Le Document Object Model (DOM) est une interface de programmation qui permet à des scripts d'examiner et de modifier le contenu du navigateur web. Par le DOM, la composition d'un document HTML est représentée sous forme d'un jeu d'objets - lesquels peuvent représenter une fenêtre, une phrase ou un style, par exemple - reliés selon une structure en arbre. " (MDN)    
 
 ### Les sélecteurs :    
-• Pour cibler un élément sur le DOM, on peut utiliser 'querySelector' et 'getElementById'.
+• Pour cibler un élément sur le DOM, on peut utiliser 'querySelector' et 'getElementById'.     
 
-### Le BOM :
-• Le Browser Object Model (BOM) contient l'objet Window.
+### Le BOM :     
+• Le Browser Object Model (BOM) contient l'objet Window.     
+
+
+
+## Chapitre 3 : Le traitement des données :    
+• Rappel des types de données    
+• Les tableaux    
+• Les objets    
+• Les structures de contrôle     
+• Projet : Texte typing    
+• Méthodes pour les strings    
+• Méthodes pour les numbers    
+• Méthodes pour les array    
+• Méthodes pour les objets    
+• Les Dates    
+• Projet : Générateur de MDP    
+• Le destructuring    
+• Les datasets    
+• Les REGEX     
+• Projet : Form checker    
+
+### Rappel des types de données :    
+• let string = 'Chaine';    
+• let number = 27;    
+• let boolean = true;    
+• let undefinedVariable; //undefined    
+
+••• TIPS •••    
+• Pour connaitre le type d'une variable, on peut utiliser "typeof"    
+
+### Les structures de contrôle :    
+
+
