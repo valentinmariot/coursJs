@@ -299,4 +299,30 @@ const h3js = document.getElementById('javascript');
 
 const h3 = document.querySelectorAll('h3');
 
-h3.forEach((language) => console.log(language.dataset));
+// h3.forEach((language) => console.log(language.dataset));
+
+
+//____________________________________________________________
+// Les Regex :
+let mail = 'mail6@adress.com';
+
+// console.log(mail.search(/com/));
+// console.log(mail.replace(/mail/, 'mess'));
+
+// console.log(mail.match(/mail/i));
+// console.log(mail.match(/[a]/));
+// console.log(mail.match(/[12456]/));
+
+// Tous les chiffres :
+// console.log(mail.match(/\d/));
+
+// Toutes les lettres :
+// console.log(mail.match(/[a-z]/));
+
+// Vérifier un mail :
+// Ce Regex doit commencer par ^ et finir par $. on ajoute i à la fin pour être insensible à la casse
+// console.log(mail.match(/^[\w_-]+@[\w-]+\.[a-z]{2,4}$/i));
+
+let separator = 234547437;
+
+console.log(separator.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' '));
