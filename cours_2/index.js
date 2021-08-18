@@ -204,12 +204,12 @@ console.log(arrayNumber);
 // Map() permet de lister/mapper (un peu comme un forEach en plus puissant)
 
 // EXEMPLE : pour garder les chiffres suppérieurs à 10 :
-console.log(arrayNumber.filter((number) => number > 10));
+// console.log(arrayNumber.filter((number) => number > 10));
 
 // EXEMPLE : pour classer par ordre croissant : 
-console.log(arrayNumber.sort((a, b) => a - b));
+// console.log(arrayNumber.sort((a, b) => a - b));
 // EXEMPLE : pour classer par ordre décroissant : 
-console.log(arrayNumber.sort((a, b) => b - a));
+// console.log(arrayNumber.sort((a, b) => b - a));
 
 // document.body.innerHTML = arrayNumber
 //     .map((number) => `<li>${number}</li>`)
@@ -220,17 +220,83 @@ console.log(arrayNumber.sort((a, b) => b - a));
 // Méthodes Objects :
 
 // EXEMPLE : pour classer des utilisateurs par âge :
-document.body.innerHTML = data
-    .filter((user) => user.admin === false)
-    .filter((user) => user.pseudo.includes('i'))
-    .sort((a, b) => a.age - b.age)
-    .map((user) => 
-        `
-            <div class="user-card">
-                <h2>${user.pseudo}</h2>
-                <p>Age : ${user.age} ans</p>
-                <p>Status : ${user.admin ? 'Administrateur' : 'Membre'}</p>
-            </div>
-        `
-    )
-    .join('');
+// document.body.innerHTML = data
+//     .filter((user) => user.admin === false)
+//     .filter((user) => user.pseudo.includes('i'))
+//     .sort((a, b) => a.age - b.age)
+//     .map((user) => 
+//         `
+//             <div class="user-card">
+//                 <h2>${user.pseudo}</h2>
+//                 <p>Age : ${user.age} ans</p>
+//                 <p>Status : ${user.admin ? 'Administrateur' : 'Membre'}</p>
+//             </div>
+//         `
+//     )
+//     .join('');
+
+
+//____________________________________________________________
+// Les dates :
+
+// Date classique :
+let date = new Date();
+
+// Timestamp (temps écoulé entre le premier janvier 1970 et maintenant, en millisecondes) :
+let timestamp = Date.parse(date);
+
+// IsoString :
+let iso = date.toISOString();
+
+function dateParser(chaine) {
+    let newDate = new Date(chaine).toLocaleDateString('fr-FR', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric'
+    });
+    return newDate;
+}
+
+// console.log(dateParser(date));
+// console.log(dateParser(timestamp));
+// console.log(dateParser(iso));
+
+
+//____________________________________________________________
+// Le destructuring :
+let moreData = {
+    destVar: ['Element 1', 'Element 2']
+}
+
+// const destVar = moreData.destVar >>>>> façon plus rapide :
+const { destVar } = moreData;
+
+console.log(moreData.destVar[0]);
+console.log(destVar);
+
+// Pour destructurer un tableau, les variables définies prendront les valeurs dans l'ordre du tableau
+let array5 = [13, 80, 42];
+let [x, y, z] = array5;
+
+// console.log(iso);
+
+const dateDestructuring = (chaine) => {
+    let newDate = chaine.split('T')[0];
+    let [y, m, d] = newDate.split('-');
+    return [d, m, y].join('/')
+}
+
+console.log(dateDestructuring(iso));
+
+
+//____________________________________________________________
+// Les Datasets :
+
+const h3js = document.getElementById('javascript');
+// console.log(h3js.dataset.lang);
+
+const h3 = document.querySelectorAll('h3');
+
+h3.forEach((language) => console.log(language.dataset));
