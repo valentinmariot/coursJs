@@ -160,8 +160,7 @@ function calc(x, y){
 • Méthodes pour les numbers    
 • Méthodes pour les array    
 • Méthodes pour les objets    
-• Les Dates    
-• Projet : Générateur de MDP    
+• Les Dates        
 • Le destructuring    
 • Les datasets    
 • Les REGEX     
@@ -176,6 +175,25 @@ function calc(x, y){
 ••• TIPS •••    
 • Pour connaitre le type d'une variable, on peut utiliser "typeof"    
 
-### Les structures de contrôle :    
+
+
+## Chapitre 4 : Les API :     
+• Qu'est-ce qu'une API    
+• XMLHttpRequest     
+• Fetch     
+• Projet : générateur de blagues     
+• Méthodes POST, PUT, DELETE    
+• L'asynchrone    
+• Projet : User API    
+• JSON    
+• Local Storage / Session Storage   
+• Les cookies      
+• Projet : Meal API    
+
+### Qu'est-ce qu'une API :   
+• Définition : Une API est un ensemble de définitions et de protocoles qui facilite la création et l'intégration de logiciels d'applications. Elle est parfois considérée comme un contrat entre un fournisseur d'informations et un utilisateur d'informations, qui permet de définir le contenu demandé au consommateur (l'appel) et le contenu demandé au producteur (la réponse).     
+• API est un acronyme anglais qui signifie "Application Programming Interface", ce qui l'on traduit par 'interface de programmation d'application".    
+• Les API de JavaScript : window, geolocalisation, history, client-storage, canvas, ...     
+
 
 
