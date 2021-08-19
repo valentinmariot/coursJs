@@ -1,0 +1,32 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": false,
+    "editor.fontSize": 15,
+    "vscode_custom_css.imports": ["file:///Users/nick/synthwave84/synthwave84.css"],
+    "vscode_custom_css.policy": true,
+    "workbench.colorTheme": "SynthWave '84",
+    "php.validate.executablePath": "/Applications/MAMP/bin/php/php7.4.12/bin/php",
+    "workbench.editor.pinnedTabSizing": "shrink",
+    "git.confirmSync": false,
+    "files.autoSave": "afterDelay",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "phpGettersSetters.templatesDir": "~/Library/Application Support/Code/User/phpGettersSetters",
+    "terminal.integrated.tabs.enabled": true,
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#1073cf2d",
+        "editor.lineHighlightBorder": "#9fced11f"
+    },
+    "editor.wordWrap": "off",
+    "diffEditor.wordWrap": "off",
+    "[markdown]": {
+        "editor.wordWrap": "off",
+        "editor.quickSuggestions": false
+    },
+    "editor.renderIndentGuides": false,
+    "editor.highlightActiveIndentGuide": false,
+    "window.zoomLevel": 1,
+    "security.workspace.trust.untrustedFiles": "open"
+}

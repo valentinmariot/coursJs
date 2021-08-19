@@ -195,5 +195,14 @@ function calc(x, y){
 • API est un acronyme anglais qui signifie "Application Programming Interface", ce qui l'on traduit par 'interface de programmation d'application".    
 • Les API de JavaScript : window, geolocalisation, history, client-storage, canvas, ...     
 
+### Fetch :     
+• Code de réponse HTTP :   
+• Réponses informatives : 100 -> 199   
+• Réponses de succès : 200 -> 299   
+• Redirections : 300 -> 399    
+• Erreurs du client : 400 -> 499    
+• Erreurs du serveur : 500 -> 599    
+
+
 
 
