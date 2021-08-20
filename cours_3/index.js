@@ -64,3 +64,29 @@ document.querySelector("form").addEventListener("submit", () => {
 })
 
 
+//___________________________________________________
+// Asynchrone :
+
+setTimeout(() => {
+    // console.log('test');
+}, 2000);
+
+// Promise -> ne sera executé que lorsque l'on aura un retour des données
+// fetch('monLien').then((res) => res)
+
+// Async/Await :
+
+// Cas fonction classique
+async function fetchData() {
+    // attend que le await soit executé avant de passer à la suite
+    await fetch('monLien')
+
+    executeUneFunction();
+}
+
+// Cas fonction fléchée
+const fetchData2 = async () => {
+    await fetch('monLien')
+
+    executeUneFunction();
+}
