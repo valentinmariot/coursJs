@@ -211,5 +211,16 @@ function calc(x, y){
 
 ### Les cookies :       
 • Un cookie est envoyé d'un serveur vers un navigateur qui va le stocker.    
-• 
 
+
+
+## Chapitre 5 : Programmation Orientée Objet :     
+• Rappel des objets en JS         
+• Les fonctions dans l'objet (méthodes)         
+• Les méthodes natives des objets         
+• Fonction constructeur         
+• Les "factory functions"         
+• Les prototypes         
+• Les classes         
+• L'héritage         
+• Projet : Yoga App         
