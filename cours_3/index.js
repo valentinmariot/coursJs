@@ -90,3 +90,55 @@ const fetchData2 = async () => {
 
     executeUneFunction();
 }
+
+
+//___________________________________________________
+// JSON :
+
+// Méthode .json() -> méthode qui s'auto-résoult en renvoyant le Body de la requête. On la retrouve parfois dans les fetch :
+fetch("data.json")
+    .then((res) => res.json())
+    .then((data) => {
+        // stringify() -> convertit en JSON
+        let settings = JSON.stringify(data);
+
+        // parse() -> transforme json en objet JS
+        console.log(JSON.parse(settings));
+    })
+;
+
+
+//___________________________________________________
+// Web API :
+
+// Client storage => 
+// Local storage
+localStorage.data = "Je stock la data";
+// document.body.textContent = localStorage.data;
+
+localStorage.removeItem("data");
+
+const obj = {
+    name: "Mitsu",
+    age: 3
+}
+
+// Il faut passer des chaines de caractrères dans le localStorage
+localStorage.user = JSON.stringify(obj);
+console.log(JSON.parse(localStorage.user));
+
+
+// Session storage =>
+// sessionStorage.dataSettings = "55px";
+// console.log(sessionStorage.dataSettings);
+
+// Pour nettoyer le session Storage, on utilise clear() :
+sessionStorage.clear();
+
+
+//___________________________________________________
+// Les cookies :
+document.cookie = "username=Mitsu";
+
+// Bonne pratique pour les cookies :
+document.cookie = "pseudo=Mimi;path=/; max-age=4500000; secure; samesite";

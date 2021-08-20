@@ -203,6 +203,13 @@ function calc(x, y){
 • Erreurs du client : 400 -> 499    
 • Erreurs du serveur : 500 -> 599    
 
+### JSON :     
+• JavaScript Object Notation : c'est la façon de noter des objets en JavaScript.    
 
+### Local storage :    
+• Le local storage a une capacité de stockage bien plus importante que les cookies : un cookie = 4Ko | local storage (par défaut sur Chrome & FireFox) = 10Mo qui peuvent être configurés.
 
+### Les cookies :       
+• Un cookie est envoyé d'un serveur vers un navigateur qui va le stocker.    
+• 
 
