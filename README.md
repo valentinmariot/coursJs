@@ -224,3 +224,6 @@ function calc(x, y){
 • Les classes         
 • L'héritage         
 • Projet : Yoga App         
+
+# Les prototypes :    
+• Les fonctions déclarées dans le prototype sont 30% plus rapides que des fonctions déclarées dans la class.    
