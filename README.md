@@ -227,3 +227,16 @@ function calc(x, y){
 
 # Les prototypes :    
 • Les fonctions déclarées dans le prototype sont 30% plus rapides que des fonctions déclarées dans la class.    
+
+
+
+## Chapitre 6 : Suit et fin :   
+• Les canvas        
+• Drag & Drop        
+• Try/Catch        
+• Strict Mode        
+• Modules (import/export)        
+• Les Tests        
+• ECMA Script        
+• TypeScript        
+• Bibliothèques et Frameworks        
