@@ -1,0 +1,30 @@
+body {
+    background: #f9f9f9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+[data-draggable="target"] {
+    float: left;
+    list-style-type: none;
+    width: 200px;
+    height: 374px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid teal;
+    border-radius: 8px;
+    background: white;
+    color: rgb(206, 201, 201);
+}
+
+[data-draggable="item"] {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+    height: 30px;
+    background: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
