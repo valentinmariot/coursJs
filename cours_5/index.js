@@ -1,3 +1,4 @@
+"use strict";
 // Canvas
 
 const canvas = document.getElementById('canvas');
@@ -26,3 +27,59 @@ function draw() {
 }
 
 window.addEventListener('load', draw());
+
+
+//_____________________________________________________
+// Try / Catch
+
+try {
+    // Test un block de code
+    maFonction();
+} catch (err) {
+    console.log(err);
+} 
+
+function isValidJSON(txt) {
+    try {
+        JSON.parse(txt);
+        return true;
+    } catch {
+        return false;
+    }
+}
+// console.log(isValidJSON(42));
+
+
+// Finally
+try {
+    // Test un block de code
+    maFonction2();
+} catch (err) {
+    console.log(err);
+} finally {
+    console.log('Vous êtes arrivés au bout du try-catch.');
+}
+
+// Throw
+function isNumber(num) {
+    if (isNaN(num)) {
+        throw "Not a Number !";
+    } else {
+        console.log('Number !');
+    }
+    // Suite de code
+}
+
+try {
+    isNumber('3d')
+} catch (error) {
+    console.log(error);
+}
+
+
+//_____________________________________________________
+// Strict mode
+// Déclarer le mode strict tout en haut du script
+
+car = "Tesla";
+console.log(car);
